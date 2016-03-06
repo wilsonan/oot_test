@@ -225,6 +225,30 @@ cpptest1_impl.cc.s:
 	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/cpptest1_impl.cc.s
 .PHONY : cpptest1_impl.cc.s
 
+derivative_ff_impl.o: derivative_ff_impl.cc.o
+.PHONY : derivative_ff_impl.o
+
+# target to build an object file
+derivative_ff_impl.cc.o:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o
+.PHONY : derivative_ff_impl.cc.o
+
+derivative_ff_impl.i: derivative_ff_impl.cc.i
+.PHONY : derivative_ff_impl.i
+
+# target to preprocess a source file
+derivative_ff_impl.cc.i:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.i
+.PHONY : derivative_ff_impl.cc.i
+
+derivative_ff_impl.s: derivative_ff_impl.cc.s
+.PHONY : derivative_ff_impl.s
+
+# target to generate assembly for a file
+derivative_ff_impl.cc.s:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.s
+.PHONY : derivative_ff_impl.cc.s
+
 myqpskdemod_cb_impl.o: myqpskdemod_cb_impl.cc.o
 .PHONY : myqpskdemod_cb_impl.o
 
@@ -390,6 +414,9 @@ help:
 	@echo "... cpptest1_impl.o"
 	@echo "... cpptest1_impl.i"
 	@echo "... cpptest1_impl.s"
+	@echo "... derivative_ff_impl.o"
+	@echo "... derivative_ff_impl.i"
+	@echo "... derivative_ff_impl.s"
 	@echo "... myqpskdemod_cb_impl.o"
 	@echo "... myqpskdemod_cb_impl.i"
 	@echo "... myqpskdemod_cb_impl.s"

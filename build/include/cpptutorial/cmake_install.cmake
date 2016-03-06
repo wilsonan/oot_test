@@ -38,6 +38,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/myqpskdemod_cb.h"
     "/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/cpptest1.h"
     "/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/cppderivative.h"
+    "/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/derivative_ff.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

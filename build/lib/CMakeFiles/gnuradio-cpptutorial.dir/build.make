@@ -118,11 +118,35 @@ lib/CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o.provides: lib/CM
 
 lib/CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o
 
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o: lib/CMakeFiles/gnuradio-cpptutorial.dir/flags.make
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o: ../lib/derivative_ff_impl.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/wilsonan/Software/gr-cpptutorial/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o"
+	cd /home/wilsonan/Software/gr-cpptutorial/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o -c /home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.cc
+
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.i"
+	cd /home/wilsonan/Software/gr-cpptutorial/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.cc > CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.i
+
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.s"
+	cd /home/wilsonan/Software/gr-cpptutorial/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.cc -o CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.s
+
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.requires:
+.PHONY : lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.provides: lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o
+
 # Object files for target gnuradio-cpptutorial
 gnuradio__cpptutorial_OBJECTS = \
 "CMakeFiles/gnuradio-cpptutorial.dir/myqpskdemod_cb_impl.cc.o" \
 "CMakeFiles/gnuradio-cpptutorial.dir/cpptest1_impl.cc.o" \
-"CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o"
+"CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o" \
+"CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o"
 
 # External object files for target gnuradio-cpptutorial
 gnuradio__cpptutorial_EXTERNAL_OBJECTS =
@@ -130,6 +154,7 @@ gnuradio__cpptutorial_EXTERNAL_OBJECTS =
 lib/libgnuradio-cpptutorial.so: lib/CMakeFiles/gnuradio-cpptutorial.dir/myqpskdemod_cb_impl.cc.o
 lib/libgnuradio-cpptutorial.so: lib/CMakeFiles/gnuradio-cpptutorial.dir/cpptest1_impl.cc.o
 lib/libgnuradio-cpptutorial.so: lib/CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o
+lib/libgnuradio-cpptutorial.so: lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o
 lib/libgnuradio-cpptutorial.so: lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make
 lib/libgnuradio-cpptutorial.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-cpptutorial.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -148,6 +173,7 @@ lib/CMakeFiles/gnuradio-cpptutorial.dir/build: lib/libgnuradio-cpptutorial.so
 lib/CMakeFiles/gnuradio-cpptutorial.dir/requires: lib/CMakeFiles/gnuradio-cpptutorial.dir/myqpskdemod_cb_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-cpptutorial.dir/requires: lib/CMakeFiles/gnuradio-cpptutorial.dir/cpptest1_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-cpptutorial.dir/requires: lib/CMakeFiles/gnuradio-cpptutorial.dir/cppderivative_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-cpptutorial.dir/requires: lib/CMakeFiles/gnuradio-cpptutorial.dir/derivative_ff_impl.cc.o.requires
 .PHONY : lib/CMakeFiles/gnuradio-cpptutorial.dir/requires
 
 lib/CMakeFiles/gnuradio-cpptutorial.dir/clean:

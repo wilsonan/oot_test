@@ -10,22 +10,22 @@
 gnuradio/attributes.h
 -
 
-../include/cpptutorial/cppderivative.h
+../include/cpptutorial/derivative_ff.h
 cpptutorial/api.h
 -
 gnuradio/sync_block.h
 -
 
-/home/wilsonan/Software/gr-cpptutorial/lib/cppderivative_impl.cc
+/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.cc
 config.h
 /home/wilsonan/Software/gr-cpptutorial/lib/config.h
 gnuradio/io_signature.h
 -
-cppderivative_impl.h
-/home/wilsonan/Software/gr-cpptutorial/lib/cppderivative_impl.h
+derivative_ff_impl.h
+/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.h
 
-/home/wilsonan/Software/gr-cpptutorial/lib/cppderivative_impl.h
-cpptutorial/cppderivative.h
+/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.h
+cpptutorial/derivative_ff.h
 -
 gnuradio/filter/fir_filter.h
 -
