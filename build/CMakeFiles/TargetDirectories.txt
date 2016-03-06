@@ -1,0 +1,12 @@
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/_cpptutorial_swig.dir
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/_cpptutorial_swig_doc_tag.dir
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/_cpptutorial_swig_swig_tag.dir
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/cpptutorial_swig_swig_2d0df.dir
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/cpptutorial_swig_swig_doc.dir
+/home/wilsonan/Software/gr-cpptutorial/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/wilsonan/Software/gr-cpptutorial/build/lib/CMakeFiles/gnuradio-cpptutorial.dir
+/home/wilsonan/Software/gr-cpptutorial/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/wilsonan/Software/gr-cpptutorial/build/python/CMakeFiles/pygen_python_41784.dir
+/home/wilsonan/Software/gr-cpptutorial/build/swig/CMakeFiles/pygen_swig_d2979.dir
+/home/wilsonan/Software/gr-cpptutorial/build/lib/CMakeFiles/test-cpptutorial.dir
+/home/wilsonan/Software/gr-cpptutorial/build/CMakeFiles/uninstall.dir

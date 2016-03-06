@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="myqpskdemod__cb_8h" kind="file">
+    <compoundname>myqpskdemod_cb.h</compoundname>
+    <includes refid="api_8h" local="no">cpptutorial/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="myqpskdemod__cb__impl_8h" local="no">myqpskdemod_cb_impl.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>cpptutorial/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="11">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="9">
+        <label>myqpskdemod_cb.h</label>
+        <link refid="myqpskdemod_cb.h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="14">
+        <label>myqpskdemod_cb_impl.h</label>
+        <link refid="myqpskdemod__cb__impl_8h"/>
+      </node>
+      <node id="13">
+        <label>myqpskdemod_cb.h</label>
+        <link refid="myqpskdemod_cb.h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb" prot="public">gr::cpptutorial::myqpskdemod_cb</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1cpptutorial">gr::cpptutorial</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/myqpskdemod_cb.h"/>
+  </compounddef>
+</doxygen>

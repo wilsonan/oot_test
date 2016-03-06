@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1cpptutorial" kind="namespace">
+    <compoundname>gr::cpptutorial</compoundname>
+    <innerclass refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb" prot="public">gr::cpptutorial::myqpskdemod_cb</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/wilsonan/Software/gr-cpptutorial/include/cpptutorial/myqpskdemod_cb.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

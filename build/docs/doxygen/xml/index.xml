@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb" kind="class"><name>gr::cpptutorial::myqpskdemod_cb</name>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb_1abd13391c8596f3f0a75c9593fbd7b8f9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb_1abcca0955ce3b76079c9d4ee43f8da70b" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl" kind="class"><name>gr::cpptutorial::myqpskdemod_cb_impl</name>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl_1a83bc0849b308d58db53d02d3c042265b" kind="variable"><name>d_gray_code</name></member>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl_1a7260f903e6a0b83d9d3c17ef1b6c83b6" kind="function"><name>myqpskdemod_cb_impl</name></member>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl_1a700f56acf1037842758fe96259a0417d" kind="function"><name>~myqpskdemod_cb_impl</name></member>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl_1a8865227e80d469e5d6ec32ce2e8aa604" kind="function"><name>get_minimum_distances</name></member>
+    <member refid="classgr_1_1cpptutorial_1_1myqpskdemod__cb__impl_1ad33eea0a65b3e83c51bbf31702808010" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1cpptutorial" kind="namespace"><name>gr::cpptutorial</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a4de1c5923b02011f6f504360b5cda55f" kind="define"><name>CPPTUTORIAL_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="myqpskdemod__cb_8h" kind="file"><name>myqpskdemod_cb.h</name>
+  </compound>
+  <compound refid="myqpskdemod__cb__impl_8h" kind="file"><name>myqpskdemod_cb_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d142da697d8e79ef093a97c5bbd3a141" kind="dir"><name>cpptutorial</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
