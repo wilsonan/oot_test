@@ -48,8 +48,8 @@ namespace gr {
 	taps.push_back(-1);
 	d_fir = new gr::filter::kernel::fir_filter_fff(1,taps);
 	set_history(2);
-	
-	
+	//std::cout<<nfilt*2;
+	filter_size = nfilt*2;
 	}
 
     /*
@@ -67,10 +67,10 @@ namespace gr {
     {
         const float *in = (const float *) input_items[0];
         float *out = (float *) output_items[0];
-
+	std::cout<<filter_size;
 	d_fir->filterN(out,in,noutput_items);
         // Do <+signal processing+>
-
+	
         // Tell runtime system how many output items we produced.
         return noutput_items;
     }

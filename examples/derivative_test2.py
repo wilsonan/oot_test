@@ -2,7 +2,7 @@
 ##################################################
 # Gnuradio Python Flow Graph
 # Title: Derivative Test2
-# Generated: Sun Mar  6 23:07:45 2016
+# Generated: Sun Mar  6 23:23:49 2016
 ##################################################
 
 from PyQt4 import Qt
@@ -50,7 +50,7 @@ class derivative_test2(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
-        self.cpptutorial_derivative_ff_0 = cpptutorial.derivative_ff(2)
+        self.cpptutorial_derivative_ff_0 = cpptutorial.derivative_ff(32)
         self.blocks_vector_source_x_0 = blocks.vector_source_f((0, 1, 2, 3, 4, 4, 4, 4, 2, 0), True, 1, [])
         self.blocks_vector_sink_x_0 = blocks.vector_sink_f(1)
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_float*1, samp_rate,True)
@@ -91,7 +91,6 @@ if __name__ == '__main__':
     tb = derivative_test2()
     tb.start()
     tb.show()
-    print tb.blocks_vector_sink_x_0.data()
     def quitting():
         tb.stop()
         tb.wait()
