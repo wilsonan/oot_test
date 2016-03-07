@@ -393,6 +393,30 @@ test_cpptutorial.cc.s:
 	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/test-cpptutorial.dir/build.make lib/CMakeFiles/test-cpptutorial.dir/test_cpptutorial.cc.s
 .PHONY : test_cpptutorial.cc.s
 
+wil_polyclock1_impl.o: wil_polyclock1_impl.cc.o
+.PHONY : wil_polyclock1_impl.o
+
+# target to build an object file
+wil_polyclock1_impl.cc.o:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/wil_polyclock1_impl.cc.o
+.PHONY : wil_polyclock1_impl.cc.o
+
+wil_polyclock1_impl.i: wil_polyclock1_impl.cc.i
+.PHONY : wil_polyclock1_impl.i
+
+# target to preprocess a source file
+wil_polyclock1_impl.cc.i:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/wil_polyclock1_impl.cc.i
+.PHONY : wil_polyclock1_impl.cc.i
+
+wil_polyclock1_impl.s: wil_polyclock1_impl.cc.s
+.PHONY : wil_polyclock1_impl.s
+
+# target to generate assembly for a file
+wil_polyclock1_impl.cc.s:
+	cd /home/wilsonan/Software/gr-cpptutorial/build && $(MAKE) -f lib/CMakeFiles/gnuradio-cpptutorial.dir/build.make lib/CMakeFiles/gnuradio-cpptutorial.dir/wil_polyclock1_impl.cc.s
+.PHONY : wil_polyclock1_impl.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -435,6 +459,9 @@ help:
 	@echo "... test_cpptutorial.o"
 	@echo "... test_cpptutorial.i"
 	@echo "... test_cpptutorial.s"
+	@echo "... wil_polyclock1_impl.o"
+	@echo "... wil_polyclock1_impl.i"
+	@echo "... wil_polyclock1_impl.s"
 .PHONY : help
 
 

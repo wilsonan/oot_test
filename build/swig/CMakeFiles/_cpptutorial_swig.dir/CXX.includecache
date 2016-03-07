@@ -34,6 +34,12 @@ cpptutorial/api.h
 gnuradio/sync_block.h
 -
 
+../include/cpptutorial/wil_polyclock1.h
+cpptutorial/api.h
+-
+gnuradio/block.h
+-
+
 /home/wilsonan/Software/gr-cpptutorial/build/swig/cpptutorial_swigPYTHON_wrap.cxx
 Python.h
 -
@@ -85,6 +91,8 @@ cpptutorial/cppderivative.h
 /home/wilsonan/Software/gr-cpptutorial/build/swig/cpptutorial/cppderivative.h
 cpptutorial/derivative_ff.h
 /home/wilsonan/Software/gr-cpptutorial/build/swig/cpptutorial/derivative_ff.h
+cpptutorial/wil_polyclock1.h
+/home/wilsonan/Software/gr-cpptutorial/build/swig/cpptutorial/wil_polyclock1.h
 float.h
 -
 math.h

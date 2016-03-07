@@ -1295,5 +1295,308 @@ derivative_ff_sptr_swigregister(derivative_ff_sptr)
 derivative_ff_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 derivative_ff = derivative_ff.make;
 
+class wil_polyclock1(object):
+    """Proxy of C++ gr::cpptutorial::wil_polyclock1 class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+    def make(*args, **kwargs):
+        """
+        make(double sps, float lpbw, pmt_vector_float taps, unsigned int filter_size, float ini_phase, 
+            float max_rdev, int outsps) -> wil_polyclock1_sptr
+        """
+        return _cpptutorial_swig.wil_polyclock1_make(*args, **kwargs)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _cpptutorial_swig.delete_wil_polyclock1
+    __del__ = lambda self : None;
+wil_polyclock1_swigregister = _cpptutorial_swig.wil_polyclock1_swigregister
+wil_polyclock1_swigregister(wil_polyclock1)
+
+def wil_polyclock1_make(*args, **kwargs):
+  """
+    wil_polyclock1_make(double sps, float lpbw, pmt_vector_float taps, unsigned int filter_size, float ini_phase, 
+        float max_rdev, int outsps) -> wil_polyclock1_sptr
+    """
+  return _cpptutorial_swig.wil_polyclock1_make(*args, **kwargs)
+
+class wil_polyclock1_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::cpptutorial::wil_polyclock1)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(boost::shared_ptr<(gr::cpptutorial::wil_polyclock1)> self) -> wil_polyclock1_sptr
+        __init__(boost::shared_ptr<(gr::cpptutorial::wil_polyclock1)> self, wil_polyclock1 p) -> wil_polyclock1_sptr
+        """
+        this = _cpptutorial_swig.new_wil_polyclock1_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(wil_polyclock1_sptr self) -> wil_polyclock1"""
+        return _cpptutorial_swig.wil_polyclock1_sptr___deref__(self)
+
+    __swig_destroy__ = _cpptutorial_swig.delete_wil_polyclock1_sptr
+    __del__ = lambda self : None;
+    def make(self, *args, **kwargs):
+        """
+        make(wil_polyclock1_sptr self, double sps, float lpbw, pmt_vector_float taps, unsigned int filter_size, float ini_phase, 
+            float max_rdev, int outsps) -> wil_polyclock1_sptr
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_make(self, *args, **kwargs)
+
+    def history(self):
+        """history(wil_polyclock1_sptr self) -> unsigned int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_history(self)
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(wil_polyclock1_sptr self, int which, int delay)
+        declare_sample_delay(wil_polyclock1_sptr self, unsigned int delay)
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, *args, **kwargs):
+        """sample_delay(wil_polyclock1_sptr self, int which) -> unsigned int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_sample_delay(self, *args, **kwargs)
+
+    def output_multiple(self):
+        """output_multiple(wil_polyclock1_sptr self) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(wil_polyclock1_sptr self) -> double"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_relative_rate(self)
+
+    def start(self):
+        """start(wil_polyclock1_sptr self) -> bool"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_start(self)
+
+    def stop(self):
+        """stop(wil_polyclock1_sptr self) -> bool"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(wil_polyclock1_sptr self, unsigned int which_input) -> uint64_t"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(wil_polyclock1_sptr self, unsigned int which_output) -> uint64_t"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_nitems_written(self, *args, **kwargs)
+
+    def max_noutput_items(self):
+        """max_noutput_items(wil_polyclock1_sptr self) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, *args, **kwargs):
+        """set_max_noutput_items(wil_polyclock1_sptr self, int m)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_max_noutput_items(self, *args, **kwargs)
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(wil_polyclock1_sptr self)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(wil_polyclock1_sptr self) -> bool"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, *args, **kwargs):
+        """set_min_noutput_items(wil_polyclock1_sptr self, int m)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_min_noutput_items(self, *args, **kwargs)
+
+    def min_noutput_items(self):
+        """min_noutput_items(wil_polyclock1_sptr self) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, *args, **kwargs):
+        """max_output_buffer(wil_polyclock1_sptr self, int i) -> long"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_max_output_buffer(self, *args, **kwargs)
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(wil_polyclock1_sptr self, long max_output_buffer)
+        set_max_output_buffer(wil_polyclock1_sptr self, int port, long max_output_buffer)
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, *args, **kwargs):
+        """min_output_buffer(wil_polyclock1_sptr self, int i) -> long"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_min_output_buffer(self, *args, **kwargs)
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(wil_polyclock1_sptr self, long min_output_buffer)
+        set_min_output_buffer(wil_polyclock1_sptr self, int port, long min_output_buffer)
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self):
+        """pc_nproduced(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(wil_polyclock1_sptr self, int which) -> float
+        pc_input_buffers_full(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(wil_polyclock1_sptr self, int which) -> float
+        pc_input_buffers_full_avg(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(wil_polyclock1_sptr self, int which) -> float
+        pc_input_buffers_full_var(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(wil_polyclock1_sptr self, int which) -> float
+        pc_output_buffers_full(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(wil_polyclock1_sptr self, int which) -> float
+        pc_output_buffers_full_avg(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(wil_polyclock1_sptr self, int which) -> float
+        pc_output_buffers_full_var(wil_polyclock1_sptr self) -> pmt_vector_float
+        """
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self):
+        """pc_work_time(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(wil_polyclock1_sptr self) -> float"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, *args, **kwargs):
+        """set_processor_affinity(wil_polyclock1_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_processor_affinity(self, *args, **kwargs)
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(wil_polyclock1_sptr self)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self):
+        """processor_affinity(wil_polyclock1_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_processor_affinity(self)
+
+    def active_thread_priority(self):
+        """active_thread_priority(wil_polyclock1_sptr self) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_active_thread_priority(self)
+
+    def thread_priority(self):
+        """thread_priority(wil_polyclock1_sptr self) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_thread_priority(self)
+
+    def set_thread_priority(self, *args, **kwargs):
+        """set_thread_priority(wil_polyclock1_sptr self, int priority) -> int"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_thread_priority(self, *args, **kwargs)
+
+    def name(self):
+        """name(wil_polyclock1_sptr self) -> std::string"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_name(self)
+
+    def symbol_name(self):
+        """symbol_name(wil_polyclock1_sptr self) -> std::string"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_symbol_name(self)
+
+    def input_signature(self):
+        """input_signature(wil_polyclock1_sptr self) -> io_signature_sptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(wil_polyclock1_sptr self) -> io_signature_sptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(wil_polyclock1_sptr self) -> long"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(wil_polyclock1_sptr self) -> basic_block_sptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(wil_polyclock1_sptr self, int ninputs, int noutputs) -> bool"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_check_topology(self, *args, **kwargs)
+
+    def alias(self):
+        """alias(wil_polyclock1_sptr self) -> std::string"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_alias(self)
+
+    def set_block_alias(self, *args, **kwargs):
+        """set_block_alias(wil_polyclock1_sptr self, std::string name)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_set_block_alias(self, *args, **kwargs)
+
+    def _post(self, *args, **kwargs):
+        """_post(wil_polyclock1_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _cpptutorial_swig.wil_polyclock1_sptr__post(self, *args, **kwargs)
+
+    def message_ports_in(self):
+        """message_ports_in(wil_polyclock1_sptr self) -> swig_int_ptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_message_ports_in(self)
+
+    def message_ports_out(self):
+        """message_ports_out(wil_polyclock1_sptr self) -> swig_int_ptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_message_ports_out(self)
+
+    def message_subscribers(self, *args, **kwargs):
+        """message_subscribers(wil_polyclock1_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _cpptutorial_swig.wil_polyclock1_sptr_message_subscribers(self, *args, **kwargs)
+
+wil_polyclock1_sptr_swigregister = _cpptutorial_swig.wil_polyclock1_sptr_swigregister
+wil_polyclock1_sptr_swigregister(wil_polyclock1_sptr)
+
+wil_polyclock1_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+wil_polyclock1 = wil_polyclock1.make;
+
 
 

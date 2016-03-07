@@ -10,24 +10,22 @@
 gnuradio/attributes.h
 -
 
-../include/cpptutorial/derivative_ff.h
+../include/cpptutorial/wil_polyclock1.h
 cpptutorial/api.h
 -
-gnuradio/sync_block.h
+gnuradio/block.h
 -
 
-/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.cc
+/home/wilsonan/Software/gr-cpptutorial/lib/wil_polyclock1_impl.cc
 config.h
 /home/wilsonan/Software/gr-cpptutorial/lib/config.h
 gnuradio/io_signature.h
 -
-derivative_ff_impl.h
-/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.h
+wil_polyclock1_impl.h
+/home/wilsonan/Software/gr-cpptutorial/lib/wil_polyclock1_impl.h
 
-/home/wilsonan/Software/gr-cpptutorial/lib/derivative_ff_impl.h
-cpptutorial/derivative_ff.h
--
-gnuradio/filter/fir_filter.h
+/home/wilsonan/Software/gr-cpptutorial/lib/wil_polyclock1_impl.h
+cpptutorial/wil_polyclock1.h
 -
 
 /usr/local/include/gnuradio/api.h
@@ -84,18 +82,6 @@ gnuradio/api.h
 gnuradio/basic_block.h
 -
 map
--
-
-/usr/local/include/gnuradio/filter/api.h
-gnuradio/attributes.h
--
-
-/usr/local/include/gnuradio/filter/fir_filter.h
-gnuradio/filter/api.h
--
-vector
--
-gnuradio/gr_complex.h
 -
 
 /usr/local/include/gnuradio/gr_complex.h
@@ -246,12 +232,6 @@ gnuradio/types.h
 gnuradio/api.h
 -
 boost/shared_ptr.hpp
--
-
-/usr/local/include/gnuradio/sync_block.h
-gnuradio/api.h
--
-gnuradio/block.h
 -
 
 /usr/local/include/gnuradio/tags.h

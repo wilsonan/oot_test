@@ -12,6 +12,7 @@
 #include "cpptutorial/cpptest1.h"
 #include "cpptutorial/cppderivative.h"
 #include "cpptutorial/derivative_ff.h"
+#include "cpptutorial/wil_polyclock1.h"
 %}
 
 
@@ -23,3 +24,6 @@ GR_SWIG_BLOCK_MAGIC2(cpptutorial, cpptest1);
 GR_SWIG_BLOCK_MAGIC2(cpptutorial, cppderivative);
 %include "cpptutorial/derivative_ff.h"
 GR_SWIG_BLOCK_MAGIC2(cpptutorial, derivative_ff);
+
+%include "cpptutorial/wil_polyclock1.h"
+GR_SWIG_BLOCK_MAGIC2(cpptutorial, wil_polyclock1);

@@ -25,5 +25,6 @@ install(FILES
     myqpskdemod_cb.h
     cpptest1.h
     cppderivative.h
-    derivative_ff.h DESTINATION include/cpptutorial
+    derivative_ff.h
+    wil_polyclock1.h DESTINATION include/cpptutorial
 )

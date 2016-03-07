@@ -4,6 +4,7 @@
 /usr/local/include/cpptutorial/cpptest1.h
 /usr/local/include/cpptutorial/cppderivative.h
 /usr/local/include/cpptutorial/derivative_ff.h
+/usr/local/include/cpptutorial/wil_polyclock1.h
 /usr/local/lib/libgnuradio-cpptutorial.so
 /usr/local/lib/python2.7/dist-packages/cpptutorial/_cpptutorial_swig.so
 /usr/local/lib/python2.7/dist-packages/cpptutorial/cpptutorial_swig.py
@@ -18,6 +19,7 @@
 /usr/local/share/gnuradio/grc/blocks/cpptutorial_cpptest1.xml
 /usr/local/share/gnuradio/grc/blocks/cpptutorial_cppderivative.xml
 /usr/local/share/gnuradio/grc/blocks/cpptutorial_derivative_ff.xml
+/usr/local/share/gnuradio/grc/blocks/cpptutorial_wil_polyclock1.xml
 /usr/local/share/doc/gr-cpptutorial/xml/api_8h.xml
 /usr/local/share/doc/gr-cpptutorial/xml/namespacegr.xml
 /usr/local/share/doc/gr-cpptutorial/xml/namespacestd.xml

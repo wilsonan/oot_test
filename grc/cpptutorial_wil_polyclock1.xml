@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<block>
+  <name>wil_polyclock1</name>
+  <key>cpptutorial_wil_polyclock1</key>
+  <category>cpptutorial</category>
+  <import>import cpptutorial</import>
+  <make>cpptutorial.wil_polyclock1($sps, $lpbw, $taps, $filter_size, $ini_phase, $max_rdev, $outsps)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Samples/symbols</name>
+    <key>sps</key>
+    <type>real</type>
+  </param>
+ 
+  <param>
+    <name>Loop Bandwidth</name>
+    <key>lpbw</key>
+    <type>float</type>
+  </param>
+
+   <param>
+    <name>Filter Taps</name>
+    <key>taps</key>
+    <type>real_vector</type>
+  </param>
+
+  <param> 
+    <name>Filter Size</name>
+    <key>filter_size</key>
+    <type>int</type>
+  </param>
+
+   <param>
+    <name>Initial Phase</name>
+    <key>ini_phase</key>
+    <type>float</type>
+  </param>
+
+   <param>
+    <name>Maximum Rate Deviation</name>
+    <key>max_rdev</key>
+    <type>float</type>
+  </param>
+
+   <param>
+    <name>Output SPS</name>
+    <key>outsps</key>
+    <type>int</type>
+  </param>
+ 
+  
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

@@ -38,6 +38,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/wilsonan/Software/gr-cpptutorial/grc/cpptutorial_cpptest1.xml"
     "/home/wilsonan/Software/gr-cpptutorial/grc/cpptutorial_cppderivative.xml"
     "/home/wilsonan/Software/gr-cpptutorial/grc/cpptutorial_derivative_ff.xml"
+    "/home/wilsonan/Software/gr-cpptutorial/grc/cpptutorial_wil_polyclock1.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
