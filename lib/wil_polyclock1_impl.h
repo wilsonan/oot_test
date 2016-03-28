@@ -22,6 +22,7 @@
 #define INCLUDED_CPPTUTORIAL_WIL_POLYCLOCK1_IMPL_H
 
 #include <cpptutorial/wil_polyclock1.h>
+#include <gnuradio/filter/fir_filter.h>
 
 namespace gr {
   namespace cpptutorial {
@@ -30,6 +31,14 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
+	int d_nfilt; 
+
+	gr::filter::kernel::fir_filter_ccf *test_filter;
+
+	// Creating taps for the polyphase matched filter- it is made as a two dimensional dynamic array
+	std::vector< std::vector<float> >	d_taps;
+
+	//test_filter = new gr::filter::kernel::fir_filter_ccf(1);
 
      public:
       wil_polyclock1_impl(double sps, float lpbw, const std::vector<float> &taps, unsigned int filter_size, float ini_phase, float max_rdev, int outsps);
@@ -48,4 +57,3 @@ namespace gr {
 } // namespace gr
 
 #endif /* INCLUDED_CPPTUTORIAL_WIL_POLYCLOCK1_IMPL_H */
-

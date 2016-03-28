@@ -24,6 +24,8 @@
 
 #include <gnuradio/io_signature.h>
 #include "wil_polyclock1_impl.h"
+#include <gnuradio/filter/fir_filter.h>
+
 
 namespace gr {
   namespace cpptutorial {
@@ -38,14 +40,34 @@ namespace gr {
 
     static int ios[] = {sizeof(gr_complex),sizeof(float),sizeof(float),sizeof(float)};
     static std::vector<int> iosig(ios, ios+sizeof(ios)/sizeof(int));
-    /*
+    
+ 	
+     /*
      * The private constructor
      */
     wil_polyclock1_impl::wil_polyclock1_impl(double sps, float lpbw, const std::vector<float> &taps, unsigned int filter_size, float ini_phase, float max_rdev, int outsps)
       : gr::block("wil_polyclock1",
               gr::io_signature::make(1, 1, sizeof(gr_complex)),
-              gr::io_signature::makev(1, 4, iosig))
-    {}
+              gr::io_signature::makev(1, 4, iosig)),d_nfilt(filter_size)
+    {
+	// Checking if the tap size is 0 or not. If 0 then a runtime error is invoked.
+	if(taps.size() == 0)
+	  throw std::runtime_error("Tap Size cannot be zero. Please specify a filter.\n");
+	
+	// Let scheduler adjust our relative_rate
+	//enable_update_rate(true);
+	//d_nfilt = filter_size;	
+	std::cout<<"The filter taps are:";
+	for(int i = 0; i < taps.size(); i++)
+		std::cout<<" "<<taps[i]<<" ";
+	
+	// Creating a fir filter using the gnuradio libraries
+   	test_filter = new gr::filter::kernel::fir_filter_ccf(1,taps);	
+	//test_filter->set_taps(taps);
+	set_history(taps.size());
+
+	}
+
 
     /*
      * Our virtual destructor.
@@ -71,9 +93,15 @@ namespace gr {
 
 	for(int i = 0; i < noutput_items; i++) {
 
-		out[i] = in[i];
+		//out[i] = in[i]*(float)d_nfilt;
+		out[i] = test_filter->filter(&in[i]);
+		
 	}
-        // Do <+signal processing+>
+
+	//test_filter->filterN(out, in, noutput_items);	
+	//std::cout<<" "<<iosig[0]<<" "<<iosig[1]<<" "<<iosig[2]<<" "<<iosig[3];
+       	//std::cout<<" "<<d_nfilt<<" ";
+	// Do <+signal processing+>
         // Tell runtime system how many input items we consumed on
         // each input stream.
         consume_each (noutput_items);

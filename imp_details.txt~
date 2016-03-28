@@ -1,0 +1,7 @@
+Before
+
+1. Made the grc structure of the custom made polyphase clock recovery block
+
+25th March 2016
+1. Realized that the polyphase matched filter coefficients are given by us using the firder.filter.... option given in taps.
+Remaining is the proper assignment of these taps to the correct matched filter and also the derivative filter. 

@@ -2,12 +2,14 @@
 ##################################################
 # Gnuradio Python Flow Graph
 # Title: Wil Polyclock1 E1
-# Generated: Mon Mar  7 17:38:26 2016
+# Generated: Sat Mar 26 12:44:48 2016
 ##################################################
 
 from gnuradio import analog
 from gnuradio import blocks
+from gnuradio import digital
 from gnuradio import eng_notation
+from gnuradio import filter
 from gnuradio import gr
 from gnuradio import wxgui
 from gnuradio.eng_option import eng_option
@@ -28,7 +30,11 @@ class wil_polyclock1_e1(grc_wxgui.top_block_gui):
         ##################################################
         # Variables
         ##################################################
+        self.sps = sps = 1
+        self.nfilts = nfilts = 2
         self.samp_rate = samp_rate = 32000
+        self.ntaps = ntaps = 11*nfilts*sps
+        self.excess_bw = excess_bw = 0.35
 
         ##################################################
         # Blocks
@@ -47,17 +53,33 @@ class wil_polyclock1_e1(grc_wxgui.top_block_gui):
         	y_axis_label="Counts",
         )
         self.Add(self.wxgui_scopesink2_0.win)
-        self.cpptutorial_wil_polyclock1_0 = cpptutorial.wil_polyclock1(2, 2, (2, ), 2, 2, 22, 2)
+        self.cpptutorial_wil_polyclock1_1 = cpptutorial.wil_polyclock1(33, 3, ((0,3,0)), 2, 3, 3, 1)
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
+        self.blocks_null_sink_0 = blocks.null_sink(gr.sizeof_gr_complex*1)
         self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, 1000, 1, 0)
 
         ##################################################
         # Connections
         ##################################################
         self.connect((self.analog_sig_source_x_0, 0), (self.blocks_throttle_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.cpptutorial_wil_polyclock1_0, 0))    
-        self.connect((self.cpptutorial_wil_polyclock1_0, 0), (self.wxgui_scopesink2_0, 0))    
+        self.connect((self.blocks_throttle_0, 0), (self.cpptutorial_wil_polyclock1_1, 0))    
+        self.connect((self.cpptutorial_wil_polyclock1_1, 0), (self.blocks_null_sink_0, 0))    
+        self.connect((self.cpptutorial_wil_polyclock1_1, 0), (self.wxgui_scopesink2_0, 0))    
 
+
+    def get_sps(self):
+        return self.sps
+
+    def set_sps(self, sps):
+        self.sps = sps
+        self.set_ntaps(11*self.nfilts*self.sps)
+
+    def get_nfilts(self):
+        return self.nfilts
+
+    def set_nfilts(self, nfilts):
+        self.nfilts = nfilts
+        self.set_ntaps(11*self.nfilts*self.sps)
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -67,6 +89,18 @@ class wil_polyclock1_e1(grc_wxgui.top_block_gui):
         self.analog_sig_source_x_0.set_sampling_freq(self.samp_rate)
         self.blocks_throttle_0.set_sample_rate(self.samp_rate)
         self.wxgui_scopesink2_0.set_sample_rate(self.samp_rate)
+
+    def get_ntaps(self):
+        return self.ntaps
+
+    def set_ntaps(self, ntaps):
+        self.ntaps = ntaps
+
+    def get_excess_bw(self):
+        return self.excess_bw
+
+    def set_excess_bw(self, excess_bw):
+        self.excess_bw = excess_bw
 
 if __name__ == '__main__':
     import ctypes
