@@ -9,4 +9,8 @@ Remaining is the proper assignment of these taps to the correct matched filter a
 26th March 2016
 
 Made a test filter and assigned the taps. Understood how we can design taps for a particular type of filter and assign it. Need to make a vector of filters and assign them the variours filter
-coefficients so that the polyphase matched filter can be implemented. 
+coefficients so that the polyphase matched filter can be implemented.
+
+29th March 2016
+
+Checking simultaneous backup to bitbucket and git 
